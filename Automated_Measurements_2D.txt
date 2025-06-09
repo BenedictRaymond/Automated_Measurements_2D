@@ -1,18 +1,17 @@
-A camera will be situated on the top of the plate. A material will be placed above the plate. Now I want to measure the perimeter and area of that material.
+A camera will be mounted on top of the Laser cutting Machine . A material will be placed above the plate. Now I want to measure the perimeter and area of that material.
 
 
-At first, Consider the material as closed shape with no holes inside it.
+the material may have holes inside it.
 
 Now steps are,
 
 1. Setup the Camera at 90 deg.
 2. Calibrate the Camera to find Camera Matrix and Distortion Co-efficients.
 3. Using the parameters convert the reference image to undistorted image and find the pixel - cm ratio.
-3. Capture the Image and Convert it into Distorted Image and Pre-process it.
-4. Apply Contours to detect the boundary and calculate area and perimeter.
+3. Capture the Image and Convert it into Distorted Image and process it
 
 
-Pre-Processing Steps:
+Processing Steps:
 
 1. Crop the edges to remove the extra curvature.
 2. Now, Calculate Area and Perimeter by differentiating as light bg with dark metal - Area of Total Metal.
